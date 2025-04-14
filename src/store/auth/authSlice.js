@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// Set your backend API URL
 const API = import.meta.env.VITE_API_URL + "/auth";
 
 const initialState = {
