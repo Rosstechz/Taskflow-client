@@ -30,7 +30,7 @@ const EditTaskForm = ({ task, onClose, onUpdated }) => {
         },
       });
       toast.success("Task updated");
-      onUpdated(); // refresh list + close form
+      onUpdated();
     } catch (err) {
       toast.error("Failed to update task");
       console.error(err);

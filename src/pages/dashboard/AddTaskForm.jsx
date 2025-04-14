@@ -36,7 +36,7 @@ const AddTaskForm = ({ onTaskAdded }) => {
       });
       toast.success("Task added!");
       setForm({ title: "", description: "", priority: "medium", dueDate: "" });
-      onTaskAdded(); // refresh task list
+      onTaskAdded();
     } catch (err) {
       console.error("Error adding task", err);
       toast.error("Failed to add task.");
